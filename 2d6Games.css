@@ -1,0 +1,129 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header {
+    grid-area: header;
+}
+
+p, h1, h2, h3, nav, figcaption, footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    color: rgb(75, 42, 42);
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'nav nav nav'
+        'content content blurb' 
+        'content content ad'
+        'bottom bottom bottom'
+        'footer footer footer';
+    padding: 10px;
+    gap: 10px;
+    grid-template-columns: 40%, 40%, 20%;
+}
+
+.span
+
+.headerFlex {
+    display: flex;
+    justify-content: flexend;
+    text-decoration: none;
+}
+
+.navFlex {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+nav {
+    grid-area: nav;
+    text-decoration: none!important;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    border: 3px;
+    background-color: rgb(75, 42, 42);
+    color: white;
+    font-size: x-large;
+}
+
+.noDecoration, a:link, a:visited {
+    text-decoration: none;
+    color: white
+}
+
+#content {
+    grid-area: content;
+}
+
+.content {
+    grid-area: content;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(141, 24, 24);
+}
+
+#blurb {
+    grid-area: blurb;
+}
+
+.blurb {
+    grid-area: blurb;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(141, 24, 24);
+}
+
+.ad {
+    grid-area: ad;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(141, 24, 24);
+}
+
+.bottom {
+    grid-area: bottom;
+    margin: 5px;
+    padding: 10px;
+    border-top: 15px solid rgb(75, 42, 42);
+}
+
+.bottomFlex {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+
+.footer {
+    grid-area: footer;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    border: 3px;
+    background-color: rgb(75, 42, 42);
+    color: white;
+    font-size: small;
+}
+
+.footerFlex {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
